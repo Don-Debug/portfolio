@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f0f1d;
+  gap: 2rem;
+  padding: 0 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+.justLogo {
+  padding: 1rem 0;
+}
+.logo {
+  width: 15rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.navLinks ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  list-style-type: none;
+}
+
+.links_text {
+  color: #fff;
+  text-decoration: none;
+  background-color: #0f0f1d;
+  padding: 2rem 1rem;
+  position: relative;
+  z-index: 2222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 19px;
+  border-top: 4px solid #575757;
+  border-radius: 5px;
+}
+
+.links_text:hover {
+  color: #0db2ff;
+}
+
+.links_text:hover .lights_off {
+  display: block;
+}
+.lights_off {
+  position: absolute;
+  top: 1px;
+  background-image: linear-gradient(to bottom, #ffffff98, #ffffff59, #ffffff00);
+  clip-path: polygon(39% 0, 66% 0, 100% 100%, 0% 100%);
+  width: 8rem;
+  height: 6rem;
+  z-index: -1;
+  display: none;
+}
+
+.lights_on {
+  display: block;
+  position: absolute;
+  top: 1px;
+  background-image: linear-gradient(to bottom, #ffffff98, #ffffff59, #ffffff00);
+  clip-path: polygon(39% 0, 66% 0, 100% 100%, 0% 100%);
+  width: 8rem;
+  height: 6rem;
+  z-index: -1;
+}
